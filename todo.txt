@@ -1,0 +1,14 @@
+# Config file: 
+epochs: för pretrain och finetune separat
+dropout: En för alla eller separat? 
+
+
+# split: 
+- Kolla hur man gör i bertax
+- Dynamiskt 
+
+#
+
+
+
+
