@@ -196,3 +196,67 @@ class HieraricalClassificationDataset(Dataset):
         "attention_mask": torch.tensor(attention_mask, dtype=torch.long),
         "output": lvl_output,
     }
+  
+
+class OverlappingKmerHieraricalClassificationDataset(Dataset):
+    def __init__(self,
+                 df,
+                 k,
+                 augmenter, # Should use augmentation strategy here
+                 preprocessor,           # Should use no augmentation (Identity) strategy here
+                 label_encoders
+                 ):
+        
+        self.df = df
+        self.k = k
+        self.augmenter = augmenter
+        self.preprocessor = preprocessor
+        self.label_encoders = label_encoders
+
+    def __len__(self):
+        return len(self.df) 
+    
+    def _create_attention_mask(self, input_seq):
+        """
+        Returns an attention mask for the input sequence:
+         - 1 where token != PAD
+         - 0 where token == PAD
+        """
+        pad_id = self.preprocessor.vocab.get_id("PAD")
+        attention_mask = [1 if token != pad_id else 0 for token in input_seq]
+        return attention_mask
+    
+    def __getitem__(self, idx):
+        
+        input_ids = [None]*self.k
+        attention_masks = [None]*self.k
+
+        row = self.df.iloc[idx]
+        sequence = row["sequence"]
+        augmented_sequence = self.augmenter.execute(list(sequence)) # Should use Augmentation strategy here
+        augmented_sequence = str(augmented_sequence)
+
+        # Augment the sequence, then preprocess it and slide one step at a time until overlapping k-mers are created
+        # Each preprocessed sequence is saved 
+        for i in range(self.k):
+            tmp_augmented_sequence = augmented_sequence[i:]
+            preprocessed_sequence = self.preprocessor.process(tmp_augmented_sequence) # Should use no augmentation (Identity) strategy here
+            input_ids[i] = preprocessed_sequence
+
+        for i in range(self.k):
+            attention_masks[i] = self._create_attention_mask(input_ids[i])
+
+        lvl_output =  {}
+        for taxonomic_lvl, label_encoder in self.label_encoders.items(): # One encoder per level now. 
+            label = row[taxonomic_lvl]
+            lvl_output[taxonomic_lvl] = {"label": label, "encoded_label": label_encoder.encode(label)}
+
+        return {
+            "original_seq": sequence,
+            "input_ids": torch.tensor(input_ids, dtype=torch.long),
+            "attention_mask": torch.tensor(attention_masks, dtype=torch.long),
+            "output": lvl_output,
+        }
+
+        
+        

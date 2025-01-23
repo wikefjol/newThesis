@@ -95,3 +95,48 @@ class ModularBertax(nn.Module):
                 return self.classification_head(pooled_output)
         else:
              raise ValueError(f"Invalid mode: {self.mode}. Use 'pretrain' or 'classify'.")
+        
+class OverlappingKmerModularBertax(nn.Module):
+    def __init__(self,
+                 encoder,
+                 mlm_head,
+                 classification_head):
+         
+        super(ModularBertax, self).__init__()
+        self.bert = encoder
+        self.mlm_head = mlm_head
+        self.classification_head = classification_head
+
+    def preTrainMode(self):
+        self.mode = "pretrain"
+
+    def classifyMode(self):
+        self.mode = "classify"
+
+    def forward(self, input_ids, attention_masks = None):
+
+        sequence_outputs = [None]*len(input_ids)
+        pooled_output = [0] * len(self.classification_head.in_features)
+        
+        for i in range(len(input_ids)):
+            outputs = self.bert(
+                input_ids = input_ids[i],
+                attention_mask = attention_masks[i]
+                )
+            sequence_outputs[i] = outputs.last_hidden_state
+            pooled_output += outputs.pooler_output
+            
+
+        if self.mode == "pretrain":
+            #USE MLM-head for pre-training
+            return self.mlm_head(sequence_outputs[0]) #Uses only the first sequence output for the MLM head
+        
+        if self.mode == "classify":
+            return self.classification_head(pooled_output)
+        
+
+
+
+
+         
+         
