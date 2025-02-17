@@ -456,3 +456,183 @@ class HierarchicalClassificationTrainer:
             "train_accuracies": self.train_accuracies,
             "val_accuracies": self.val_accuracies
         }
+
+
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from tqdm import tqdm
+
+class OverlappingKmerHierarchicalClassificationTrainer:
+    def __init__(
+        self,
+        model,              # OverlappingKmerModularBertax (in classify mode)
+        train_loader,       # DataLoader for training set
+        val_loader,         # DataLoader for validation set
+        taxonomic_levels,   # e.g. ["phylum", "class", "order", ...]
+        lr=5e-5,
+        weight_save_path="best_overlapping_kmer_weights.pt"
+    ):
+        """
+        A trainer for hierarchical classification where each sample
+        can have multiple k-mer input sequences. The `model` is expected
+        to be OverlappingKmerModularBertax or similar, which in classify mode
+        loops over all k-mers, aggregates their CLS outputs, and then
+        returns a list of logits (one per taxonomic level).
+        """
+        self.model = model
+        self.train_loader = train_loader
+        self.val_loader = val_loader
+        self.taxonomic_levels = taxonomic_levels
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.model.to(self.device)
+
+        # Standard cross-entropy across levels
+        self.criterion = nn.CrossEntropyLoss()
+        self.optimizer = optim.AdamW(self.model.parameters(), lr=lr)
+        self.weight_save_path = weight_save_path
+        self.best_val_loss = float('inf')
+
+        # Track losses and accuracies by epoch
+        self.train_losses = []
+        self.val_losses = []
+        self.train_accuracies = {lvl: [] for lvl in self.taxonomic_levels}
+        self.val_accuracies = {lvl: [] for lvl in self.taxonomic_levels}
+
+    def _run_epoch(self, epoch_nr):
+        """
+        One training epoch. Loops over train_loader, does forward & backward passes,
+        accumulates classification loss across each hierarchical level, and tracks accuracy.
+        """
+        self.model.train()
+        total_loss = 0.0
+
+        # Keep track of how many predictions are correct at each level
+        correct_dict = {lvl: 0 for lvl in self.taxonomic_levels}
+        total_dict = {lvl: 0 for lvl in self.taxonomic_levels}
+
+        progress_bar = tqdm(self.train_loader, desc=f"Training Epoch {epoch_nr+1}", leave=False)
+        for batch in progress_bar:
+            # Move inputs to device
+            input_ids = batch["input_ids"].to(self.device)         # shape could be [batch_size, k, seq_len] or [k, seq_len]
+            attention_mask = batch["attention_mask"].to(self.device)
+
+            self.optimizer.zero_grad()
+
+            # The model returns a list of logits: [ lvl1_logits, lvl2_logits, ... ]
+            logits_list = self.model(input_ids, attention_mask)
+
+            # Sum losses across hierarchical levels
+            loss = 0.0
+            for i, lvl_name in enumerate(self.taxonomic_levels):
+                # 'batch["output"][lvl_name]["encoded_label"]' is the integer label for that level
+                # shape could be [batch_size] or just [] if you have a single sample
+                level_labels = batch["output"][lvl_name]["encoded_label"].to(self.device)
+
+                lvl_logits = logits_list[i]
+                lvl_loss = self.criterion(lvl_logits, level_labels)
+                loss += lvl_loss
+
+                # Accuracy
+                preds = lvl_logits.argmax(dim=-1)
+                correct_dict[lvl_name] += (preds == level_labels).sum().item()
+                total_dict[lvl_name] += level_labels.numel()  # total items for this level
+
+            # Backprop
+            loss.backward()
+            self.optimizer.step()
+            total_loss += loss.item()
+
+        # Average loss over all batches
+        avg_loss = total_loss / len(self.train_loader)
+
+        # Compute accuracy at each level
+        accuracy_dict = {
+            lvl: correct_dict[lvl] / total_dict[lvl]
+            for lvl in self.taxonomic_levels
+        }
+
+        # Store stats for plotting
+        self.train_losses.append(avg_loss)
+        for lvl in self.taxonomic_levels:
+            self.train_accuracies[lvl].append(accuracy_dict[lvl])
+
+        return avg_loss, accuracy_dict
+
+    def _validate_epoch(self, epoch_nr):
+        """
+        One validation epoch. No gradient updates, just forward pass and metric calculation.
+        """
+        self.model.eval()
+        total_loss = 0.0
+
+        correct_dict = {lvl: 0 for lvl in self.taxonomic_levels}
+        total_dict = {lvl: 0 for lvl in self.taxonomic_levels}
+
+        progress_bar = tqdm(self.val_loader, desc=f"Validation Epoch {epoch_nr+1}", leave=False)
+        with torch.no_grad():
+            for batch in progress_bar:
+                input_ids = batch["input_ids"].to(self.device)
+                attention_mask = batch["attention_mask"].to(self.device)
+
+                logits_list = self.model(input_ids, attention_mask)
+
+                loss = 0.0
+                for i, lvl_name in enumerate(self.taxonomic_levels):
+                    level_labels = batch["output"][lvl_name]["encoded_label"].to(self.device)
+                    lvl_logits = logits_list[i]
+
+                    lvl_loss = self.criterion(lvl_logits, level_labels)
+                    loss += lvl_loss
+
+                    preds = lvl_logits.argmax(dim=-1)
+                    correct_dict[lvl_name] += (preds == level_labels).sum().item()
+                    total_dict[lvl_name] += level_labels.numel()
+
+                total_loss += loss.item()
+
+        avg_val_loss = total_loss / len(self.val_loader)
+        accuracy_dict = {
+            lvl: correct_dict[lvl] / total_dict[lvl]
+            for lvl in self.taxonomic_levels
+        }
+
+        # Store stats for plotting
+        self.val_losses.append(avg_val_loss)
+        for lvl in self.taxonomic_levels:
+            self.val_accuracies[lvl].append(accuracy_dict[lvl])
+
+        return avg_val_loss, accuracy_dict
+
+    def train(self, num_epochs=10):
+        """
+        Main entry point to train the model for the specified number of epochs.
+        Tracks metrics, saves best weights, prints progress.
+        """
+        for epoch in range(num_epochs):
+            train_loss, train_acc_dict = self._run_epoch(epoch)
+            val_loss, val_acc_dict = self._validate_epoch(epoch)
+
+            # Save model if validation loss improves
+            if val_loss < self.best_val_loss:
+                self.best_val_loss = val_loss
+                torch.save(self.model.state_dict(), self.weight_save_path)
+
+            # Print stats
+            print(f"\nEpoch {epoch + 1}/{num_epochs}")
+            print(f" Train Loss: {train_loss:.4f}")
+            for lvl in self.taxonomic_levels:
+                print(f"   Train Acc [{lvl}]: {train_acc_dict[lvl] * 100:.2f}%")
+
+            print(f" Val Loss:   {val_loss:.4f}")
+            for lvl in self.taxonomic_levels:
+                print(f"   Val Acc [{lvl}]: {val_acc_dict[lvl] * 100:.2f}%")
+            print("-" * 40)
+
+        # Return final metrics if needed
+        return {
+            "train_losses": self.train_losses,
+            "val_losses": self.val_losses,
+            "train_accuracies": self.train_accuracies,
+            "val_accuracies": self.val_accuracies
+        }

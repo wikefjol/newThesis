@@ -1,0 +1,1512 @@
+Epoch 1/100
+ Train Loss: 25.3848
+   Train Acc phylum: 84.63%
+   Train Acc class: 49.93%
+   Train Acc order: 24.48%
+   Train Acc family: 9.23%
+   Train Acc genus: 7.10%
+   Train Acc species: 6.10%
+ Val Loss:   23.3863
+   Val Acc phylum: 88.53%
+   Val Acc class: 56.08%
+   Val Acc order: 32.77%
+   Val Acc family: 14.12%
+   Val Acc genus: 10.50%
+   Val Acc species: 6.79%
+----------------------------------------
+                                                                   
+Epoch 2/100
+ Train Loss: 21.8718
+   Train Acc phylum: 88.15%
+   Train Acc class: 60.36%
+   Train Acc order: 36.27%
+   Train Acc family: 15.84%
+   Train Acc genus: 11.52%
+   Train Acc species: 8.31%
+ Val Loss:   21.7447
+   Val Acc phylum: 91.42%
+   Val Acc class: 66.11%
+   Val Acc order: 41.05%
+   Val Acc family: 19.05%
+   Val Acc genus: 12.89%
+   Val Acc species: 8.71%
+----------------------------------------
+                                                                     
+Epoch 3/100
+ Train Loss: 19.8634
+   Train Acc phylum: 90.43%
+   Train Acc class: 68.26%
+   Train Acc order: 43.68%
+   Train Acc family: 21.23%
+   Train Acc genus: 14.72%
+   Train Acc species: 10.98%
+ Val Loss:   20.1286
+   Val Acc phylum: 92.30%
+   Val Acc class: 74.11%
+   Val Acc order: 49.59%
+   Val Acc family: 24.57%
+   Val Acc genus: 15.63%
+   Val Acc species: 11.55%
+----------------------------------------
+                                                                     
+Epoch 4/100
+ Train Loss: 18.3793
+   Train Acc phylum: 91.72%
+   Train Acc class: 73.04%
+   Train Acc order: 49.65%
+   Train Acc family: 25.82%
+   Train Acc genus: 17.78%
+   Train Acc species: 12.85%
+ Val Loss:   19.2279
+   Val Acc phylum: 93.94%
+   Val Acc class: 77.26%
+   Val Acc order: 54.18%
+   Val Acc family: 29.74%
+   Val Acc genus: 18.90%
+   Val Acc species: 13.56%
+----------------------------------------
+                                                                   
+Epoch 5/100
+ Train Loss: 17.0751
+   Train Acc phylum: 93.16%
+   Train Acc class: 76.74%
+   Train Acc order: 54.73%
+   Train Acc family: 30.44%
+   Train Acc genus: 20.86%
+   Train Acc species: 14.70%
+ Val Loss:   18.0865
+   Val Acc phylum: 94.27%
+   Val Acc class: 79.48%
+   Val Acc order: 58.38%
+   Val Acc family: 35.19%
+   Val Acc genus: 22.95%
+   Val Acc species: 15.39%
+----------------------------------------
+                                                                   
+Epoch 6/100
+ Train Loss: 16.0933
+   Train Acc phylum: 94.03%
+   Train Acc class: 78.85%
+   Train Acc order: 58.09%
+   Train Acc family: 34.03%
+   Train Acc genus: 23.14%
+   Train Acc species: 15.98%
+ Val Loss:   17.5788
+   Val Acc phylum: 95.20%
+   Val Acc class: 81.49%
+   Val Acc order: 61.93%
+   Val Acc family: 38.67%
+   Val Acc genus: 25.62%
+   Val Acc species: 16.98%
+----------------------------------------
+                                                                   
+Epoch 7/100
+ Train Loss: 15.2650
+   Train Acc phylum: 94.63%
+   Train Acc class: 80.57%
+   Train Acc order: 60.73%
+   Train Acc family: 37.24%
+   Train Acc genus: 25.32%
+   Train Acc species: 16.95%
+ Val Loss:   17.1990
+   Val Acc phylum: 95.96%
+   Val Acc class: 83.21%
+   Val Acc order: 64.61%
+   Val Acc family: 41.75%
+   Val Acc genus: 27.98%
+   Val Acc species: 17.71%
+----------------------------------------
+                                                                   
+Epoch 8/100
+ Train Loss: 14.5411
+   Train Acc phylum: 95.12%
+   Train Acc class: 82.06%
+   Train Acc order: 63.45%
+   Train Acc family: 40.07%
+   Train Acc genus: 27.52%
+   Train Acc species: 17.93%
+ Val Loss:   16.6947
+   Val Acc phylum: 96.21%
+   Val Acc class: 83.56%
+   Val Acc order: 66.96%
+   Val Acc family: 44.14%
+   Val Acc genus: 28.94%
+   Val Acc species: 18.11%
+----------------------------------------
+                                                                   
+Epoch 9/100
+ Train Loss: 13.9682
+   Train Acc phylum: 95.56%
+   Train Acc class: 82.91%
+   Train Acc order: 65.04%
+   Train Acc family: 42.24%
+   Train Acc genus: 29.15%
+   Train Acc species: 18.51%
+ Val Loss:   16.4478
+   Val Acc phylum: 96.38%
+   Val Acc class: 85.03%
+   Val Acc order: 68.44%
+   Val Acc family: 46.99%
+   Val Acc genus: 31.66%
+   Val Acc species: 19.31%
+----------------------------------------
+                                                                    
+Epoch 10/100
+ Train Loss: 13.4116
+   Train Acc phylum: 95.91%
+   Train Acc class: 83.95%
+   Train Acc order: 66.85%
+   Train Acc family: 44.43%
+   Train Acc genus: 30.74%
+   Train Acc species: 19.56%
+ Val Loss:   16.2358
+   Val Acc phylum: 96.43%
+   Val Acc class: 85.71%
+   Val Acc order: 69.43%
+   Val Acc family: 48.13%
+   Val Acc genus: 32.56%
+   Val Acc species: 19.53%
+----------------------------------------
+                                                                    
+Epoch 11/100
+ Train Loss: 12.8974
+   Train Acc phylum: 96.26%
+   Train Acc class: 84.75%
+   Train Acc order: 68.52%
+   Train Acc family: 46.14%
+   Train Acc genus: 32.31%
+   Train Acc species: 20.45%
+ Val Loss:   15.9192
+   Val Acc phylum: 96.74%
+   Val Acc class: 86.52%
+   Val Acc order: 71.26%
+   Val Acc family: 49.28%
+   Val Acc genus: 34.47%
+   Val Acc species: 21.20%
+----------------------------------------
+                                                                    
+Epoch 12/100
+ Train Loss: 12.4610
+   Train Acc phylum: 96.38%
+   Train Acc class: 85.26%
+   Train Acc order: 69.74%
+   Train Acc family: 47.88%
+   Train Acc genus: 33.92%
+   Train Acc species: 21.07%
+ Val Loss:   16.1100
+   Val Acc phylum: 96.72%
+   Val Acc class: 86.31%
+   Val Acc order: 72.19%
+   Val Acc family: 51.14%
+   Val Acc genus: 35.16%
+   Val Acc species: 21.93%
+----------------------------------------
+                                                                    
+Epoch 13/100
+ Train Loss: 12.0435
+   Train Acc phylum: 96.64%
+   Train Acc class: 85.91%
+   Train Acc order: 71.00%
+   Train Acc family: 49.71%
+   Train Acc genus: 34.86%
+   Train Acc species: 21.60%
+ Val Loss:   15.8679
+   Val Acc phylum: 97.17%
+   Val Acc class: 87.00%
+   Val Acc order: 73.36%
+   Val Acc family: 52.91%
+   Val Acc genus: 37.21%
+   Val Acc species: 21.48%
+----------------------------------------
+                                                                    
+Epoch 14/100
+ Train Loss: 11.6781
+   Train Acc phylum: 96.82%
+   Train Acc class: 86.28%
+   Train Acc order: 71.88%
+   Train Acc family: 51.07%
+   Train Acc genus: 36.11%
+   Train Acc species: 22.19%
+ Val Loss:   15.7471
+   Val Acc phylum: 97.49%
+   Val Acc class: 87.57%
+   Val Acc order: 74.61%
+   Val Acc family: 54.78%
+   Val Acc genus: 38.28%
+   Val Acc species: 23.33%
+----------------------------------------
+                                                                    
+Epoch 15/100
+ Train Loss: 11.3305
+   Train Acc phylum: 97.06%
+   Train Acc class: 86.91%
+   Train Acc order: 72.92%
+   Train Acc family: 52.05%
+   Train Acc genus: 37.12%
+   Train Acc species: 22.81%
+ Val Loss:   16.2973
+   Val Acc phylum: 97.65%
+   Val Acc class: 87.35%
+   Val Acc order: 74.33%
+   Val Acc family: 55.39%
+   Val Acc genus: 38.62%
+   Val Acc species: 23.81%
+----------------------------------------
+                                                                    
+Epoch 16/100
+ Train Loss: 10.9854
+   Train Acc phylum: 97.27%
+   Train Acc class: 87.45%
+   Train Acc order: 73.96%
+   Train Acc family: 53.44%
+   Train Acc genus: 38.48%
+   Train Acc species: 23.35%
+ Val Loss:   16.1898
+   Val Acc phylum: 97.76%
+   Val Acc class: 88.31%
+   Val Acc order: 75.92%
+   Val Acc family: 56.33%
+   Val Acc genus: 39.96%
+   Val Acc species: 23.90%
+----------------------------------------
+                                                                    
+Epoch 17/100
+ Train Loss: 10.6654
+   Train Acc phylum: 97.46%
+   Train Acc class: 87.89%
+   Train Acc order: 74.89%
+   Train Acc family: 54.69%
+   Train Acc genus: 39.72%
+   Train Acc species: 23.70%
+ Val Loss:   16.3403
+   Val Acc phylum: 97.76%
+   Val Acc class: 88.21%
+   Val Acc order: 75.93%
+   Val Acc family: 57.82%
+   Val Acc genus: 40.91%
+   Val Acc species: 24.26%
+----------------------------------------
+                                                                    
+Epoch 18/100
+ Train Loss: 10.3852
+   Train Acc phylum: 97.55%
+   Train Acc class: 88.18%
+   Train Acc order: 75.42%
+   Train Acc family: 55.88%
+   Train Acc genus: 40.46%
+   Train Acc species: 24.31%
+ Val Loss:   16.2899
+   Val Acc phylum: 97.95%
+   Val Acc class: 88.97%
+   Val Acc order: 77.38%
+   Val Acc family: 58.77%
+   Val Acc genus: 42.80%
+   Val Acc species: 25.64%
+----------------------------------------
+                                                                    
+Epoch 19/100
+ Train Loss: 10.1356
+   Train Acc phylum: 97.62%
+   Train Acc class: 88.46%
+   Train Acc order: 76.37%
+   Train Acc family: 56.94%
+   Train Acc genus: 41.60%
+   Train Acc species: 24.63%
+ Val Loss:   16.5834
+   Val Acc phylum: 98.13%
+   Val Acc class: 89.14%
+   Val Acc order: 78.29%
+   Val Acc family: 59.96%
+   Val Acc genus: 43.70%
+   Val Acc species: 25.73%
+----------------------------------------
+                                                                    
+Epoch 20/100
+ Train Loss: 9.8717
+   Train Acc phylum: 97.78%
+   Train Acc class: 88.84%
+   Train Acc order: 76.92%
+   Train Acc family: 57.87%
+   Train Acc genus: 42.63%
+   Train Acc species: 25.10%
+ Val Loss:   17.1877
+   Val Acc phylum: 98.03%
+   Val Acc class: 89.84%
+   Val Acc order: 78.54%
+   Val Acc family: 60.17%
+   Val Acc genus: 43.23%
+   Val Acc species: 25.79%
+----------------------------------------
+                                                                    
+Epoch 21/100
+ Train Loss: 9.6102
+   Train Acc phylum: 97.91%
+   Train Acc class: 89.26%
+   Train Acc order: 77.76%
+   Train Acc family: 59.08%
+   Train Acc genus: 43.72%
+   Train Acc species: 25.55%
+ Val Loss:   17.0744
+   Val Acc phylum: 98.15%
+   Val Acc class: 90.03%
+   Val Acc order: 79.37%
+   Val Acc family: 61.79%
+   Val Acc genus: 45.20%
+   Val Acc species: 26.67%
+----------------------------------------
+                                                                    
+Epoch 22/100
+ Train Loss: 9.4269
+   Train Acc phylum: 97.96%
+   Train Acc class: 89.42%
+   Train Acc order: 78.15%
+   Train Acc family: 59.91%
+   Train Acc genus: 44.33%
+   Train Acc species: 25.95%
+ Val Loss:   17.2674
+   Val Acc phylum: 98.29%
+   Val Acc class: 89.93%
+   Val Acc order: 79.75%
+   Val Acc family: 62.05%
+   Val Acc genus: 44.58%
+   Val Acc species: 26.15%
+----------------------------------------
+                                                                    
+Epoch 23/100
+ Train Loss: 9.2195
+   Train Acc phylum: 98.04%
+   Train Acc class: 89.79%
+   Train Acc order: 78.70%
+   Train Acc family: 60.83%
+   Train Acc genus: 44.99%
+   Train Acc species: 26.05%
+ Val Loss:   16.9279
+   Val Acc phylum: 98.37%
+   Val Acc class: 90.31%
+   Val Acc order: 80.32%
+   Val Acc family: 63.00%
+   Val Acc genus: 45.76%
+   Val Acc species: 27.01%
+----------------------------------------
+                                                                    
+Epoch 24/100
+ Train Loss: 9.0002
+   Train Acc phylum: 98.09%
+   Train Acc class: 89.95%
+   Train Acc order: 79.52%
+   Train Acc family: 61.73%
+   Train Acc genus: 46.10%
+   Train Acc species: 26.57%
+ Val Loss:   17.1266
+   Val Acc phylum: 98.21%
+   Val Acc class: 90.38%
+   Val Acc order: 80.69%
+   Val Acc family: 63.75%
+   Val Acc genus: 45.70%
+   Val Acc species: 27.06%
+----------------------------------------
+                                                                    
+Epoch 25/100
+ Train Loss: 8.8043
+   Train Acc phylum: 98.22%
+   Train Acc class: 90.30%
+   Train Acc order: 79.98%
+   Train Acc family: 62.57%
+   Train Acc genus: 46.97%
+   Train Acc species: 27.08%
+ Val Loss:   17.3854
+   Val Acc phylum: 98.20%
+   Val Acc class: 90.70%
+   Val Acc order: 81.11%
+   Val Acc family: 64.76%
+   Val Acc genus: 46.98%
+   Val Acc species: 27.58%
+----------------------------------------
+                                                                    
+Epoch 26/100
+ Train Loss: 8.6170
+   Train Acc phylum: 98.36%
+   Train Acc class: 90.72%
+   Train Acc order: 80.65%
+   Train Acc family: 63.30%
+   Train Acc genus: 47.59%
+   Train Acc species: 27.28%
+ Val Loss:   17.3620
+   Val Acc phylum: 98.52%
+   Val Acc class: 90.95%
+   Val Acc order: 81.43%
+   Val Acc family: 65.08%
+   Val Acc genus: 47.97%
+   Val Acc species: 28.49%
+----------------------------------------
+                                                                    
+Epoch 27/100
+ Train Loss: 8.4605
+   Train Acc phylum: 98.36%
+   Train Acc class: 90.94%
+   Train Acc order: 80.94%
+   Train Acc family: 64.14%
+   Train Acc genus: 48.46%
+   Train Acc species: 27.75%
+ Val Loss:   17.8447
+   Val Acc phylum: 98.38%
+   Val Acc class: 91.16%
+   Val Acc order: 82.30%
+   Val Acc family: 65.96%
+   Val Acc genus: 49.02%
+   Val Acc species: 28.60%
+----------------------------------------
+                                                                    
+Epoch 28/100
+ Train Loss: 8.2812
+   Train Acc phylum: 98.56%
+   Train Acc class: 91.11%
+   Train Acc order: 81.56%
+   Train Acc family: 64.77%
+   Train Acc genus: 49.39%
+   Train Acc species: 28.16%
+ Val Loss:   17.1272
+   Val Acc phylum: 98.57%
+   Val Acc class: 91.33%
+   Val Acc order: 82.50%
+   Val Acc family: 65.88%
+   Val Acc genus: 48.61%
+   Val Acc species: 28.92%
+----------------------------------------
+                                                                    
+Epoch 29/100
+ Train Loss: 8.1554
+   Train Acc phylum: 98.55%
+   Train Acc class: 91.30%
+   Train Acc order: 82.12%
+   Train Acc family: 65.35%
+   Train Acc genus: 49.96%
+   Train Acc species: 28.22%
+ Val Loss:   17.6192
+   Val Acc phylum: 98.57%
+   Val Acc class: 91.36%
+   Val Acc order: 82.76%
+   Val Acc family: 66.90%
+   Val Acc genus: 48.80%
+   Val Acc species: 28.65%
+----------------------------------------
+                                                                    
+Epoch 30/100
+ Train Loss: 8.0115
+   Train Acc phylum: 98.58%
+   Train Acc class: 91.50%
+   Train Acc order: 82.36%
+   Train Acc family: 66.17%
+   Train Acc genus: 50.62%
+   Train Acc species: 28.52%
+ Val Loss:   17.8892
+   Val Acc phylum: 98.53%
+   Val Acc class: 91.26%
+   Val Acc order: 82.80%
+   Val Acc family: 66.98%
+   Val Acc genus: 49.53%
+   Val Acc species: 28.92%
+----------------------------------------
+                                                                      
+Epoch 31/100
+ Train Loss: 7.8662
+   Train Acc phylum: 98.73%
+   Train Acc class: 91.77%
+   Train Acc order: 82.80%
+   Train Acc family: 66.75%
+   Train Acc genus: 51.29%
+   Train Acc species: 28.98%
+ Val Loss:   17.7252
+   Val Acc phylum: 98.62%
+   Val Acc class: 91.83%
+   Val Acc order: 83.33%
+   Val Acc family: 67.98%
+   Val Acc genus: 50.19%
+   Val Acc species: 28.93%
+----------------------------------------
+                                                                    
+Epoch 32/100
+ Train Loss: 7.7215
+   Train Acc phylum: 98.68%
+   Train Acc class: 91.82%
+   Train Acc order: 83.19%
+   Train Acc family: 67.52%
+   Train Acc genus: 51.82%
+   Train Acc species: 29.19%
+ Val Loss:   18.1481
+   Val Acc phylum: 98.51%
+   Val Acc class: 91.88%
+   Val Acc order: 83.22%
+   Val Acc family: 68.12%
+   Val Acc genus: 50.31%
+   Val Acc species: 29.28%
+----------------------------------------
+                                                                    
+Epoch 33/100
+ Train Loss: 7.5915
+   Train Acc phylum: 98.75%
+   Train Acc class: 92.03%
+   Train Acc order: 83.65%
+   Train Acc family: 68.17%
+   Train Acc genus: 52.55%
+   Train Acc species: 29.52%
+ Val Loss:   17.9069
+   Val Acc phylum: 98.65%
+   Val Acc class: 91.73%
+   Val Acc order: 83.73%
+   Val Acc family: 68.77%
+   Val Acc genus: 51.73%
+   Val Acc species: 29.82%
+----------------------------------------
+                                                                    
+Epoch 34/100
+ Train Loss: 7.4607
+   Train Acc phylum: 98.86%
+   Train Acc class: 92.29%
+   Train Acc order: 83.97%
+   Train Acc family: 68.62%
+   Train Acc genus: 53.24%
+   Train Acc species: 29.83%
+ Val Loss:   17.9381
+   Val Acc phylum: 98.73%
+   Val Acc class: 92.05%
+   Val Acc order: 84.00%
+   Val Acc family: 69.28%
+   Val Acc genus: 51.87%
+   Val Acc species: 29.82%
+----------------------------------------
+                                                                    
+Epoch 35/100
+ Train Loss: 7.3357
+   Train Acc phylum: 98.86%
+   Train Acc class: 92.58%
+   Train Acc order: 84.42%
+   Train Acc family: 69.28%
+   Train Acc genus: 53.85%
+   Train Acc species: 30.11%
+ Val Loss:   18.2507
+   Val Acc phylum: 98.69%
+   Val Acc class: 92.31%
+   Val Acc order: 84.01%
+   Val Acc family: 69.94%
+   Val Acc genus: 52.16%
+   Val Acc species: 29.96%
+----------------------------------------
+                                                                    
+Epoch 36/100
+ Train Loss: 7.2159
+   Train Acc phylum: 98.87%
+   Train Acc class: 92.74%
+   Train Acc order: 84.79%
+   Train Acc family: 69.87%
+   Train Acc genus: 54.55%
+   Train Acc species: 30.16%
+ Val Loss:   18.1793
+   Val Acc phylum: 98.86%
+   Val Acc class: 92.16%
+   Val Acc order: 84.65%
+   Val Acc family: 70.49%
+   Val Acc genus: 53.46%
+   Val Acc species: 30.81%
+----------------------------------------
+                                                                    
+Epoch 37/100
+ Train Loss: 7.0968
+   Train Acc phylum: 98.95%
+   Train Acc class: 92.89%
+   Train Acc order: 85.10%
+   Train Acc family: 70.30%
+   Train Acc genus: 54.93%
+   Train Acc species: 30.61%
+ Val Loss:   18.3677
+   Val Acc phylum: 98.77%
+   Val Acc class: 92.40%
+   Val Acc order: 85.05%
+   Val Acc family: 70.34%
+   Val Acc genus: 52.51%
+   Val Acc species: 30.52%
+----------------------------------------
+                                                                    
+Epoch 38/100
+ Train Loss: 6.9922
+   Train Acc phylum: 98.99%
+   Train Acc class: 93.06%
+   Train Acc order: 85.33%
+   Train Acc family: 70.80%
+   Train Acc genus: 55.63%
+   Train Acc species: 30.90%
+ Val Loss:   18.2087
+   Val Acc phylum: 98.65%
+   Val Acc class: 92.46%
+   Val Acc order: 85.13%
+   Val Acc family: 70.68%
+   Val Acc genus: 53.15%
+   Val Acc species: 30.80%
+----------------------------------------
+                                                                    
+Epoch 39/100
+ Train Loss: 6.8737
+   Train Acc phylum: 99.06%
+   Train Acc class: 93.31%
+   Train Acc order: 85.62%
+   Train Acc family: 71.46%
+   Train Acc genus: 56.18%
+   Train Acc species: 31.21%
+ Val Loss:   18.3833
+   Val Acc phylum: 98.80%
+   Val Acc class: 92.48%
+   Val Acc order: 85.30%
+   Val Acc family: 71.18%
+   Val Acc genus: 53.51%
+   Val Acc species: 30.80%
+----------------------------------------
+                                                                    
+Epoch 40/100
+ Train Loss: 6.7793
+   Train Acc phylum: 99.08%
+   Train Acc class: 93.33%
+   Train Acc order: 85.90%
+   Train Acc family: 71.84%
+   Train Acc genus: 56.53%
+   Train Acc species: 31.35%
+ Val Loss:   18.5377
+   Val Acc phylum: 98.74%
+   Val Acc class: 92.52%
+   Val Acc order: 85.02%
+   Val Acc family: 71.55%
+   Val Acc genus: 53.90%
+   Val Acc species: 31.09%
+----------------------------------------
+                                                                    
+Epoch 41/100
+ Train Loss: 6.6596
+   Train Acc phylum: 99.10%
+   Train Acc class: 93.50%
+   Train Acc order: 86.22%
+   Train Acc family: 72.36%
+   Train Acc genus: 57.37%
+   Train Acc species: 31.74%
+ Val Loss:   18.2961
+   Val Acc phylum: 98.81%
+   Val Acc class: 92.92%
+   Val Acc order: 85.95%
+   Val Acc family: 72.38%
+   Val Acc genus: 54.42%
+   Val Acc species: 31.52%
+----------------------------------------
+                                                                    
+Epoch 42/100
+ Train Loss: 6.5924
+   Train Acc phylum: 99.14%
+   Train Acc class: 93.60%
+   Train Acc order: 86.49%
+   Train Acc family: 72.65%
+   Train Acc genus: 57.77%
+   Train Acc species: 31.99%
+ Val Loss:   18.3663
+   Val Acc phylum: 98.89%
+   Val Acc class: 92.76%
+   Val Acc order: 85.96%
+   Val Acc family: 72.44%
+   Val Acc genus: 54.35%
+   Val Acc species: 31.89%
+----------------------------------------
+                                                                    
+Epoch 43/100
+ Train Loss: 6.4293
+   Train Acc phylum: 99.22%
+   Train Acc class: 93.78%
+   Train Acc order: 86.90%
+   Train Acc family: 73.45%
+   Train Acc genus: 58.71%
+   Train Acc species: 32.57%
+ Val Loss:   18.2148
+   Val Acc phylum: 98.92%
+   Val Acc class: 92.74%
+   Val Acc order: 85.79%
+   Val Acc family: 72.47%
+   Val Acc genus: 54.86%
+   Val Acc species: 31.91%
+----------------------------------------
+                                                                    
+Epoch 44/100
+ Train Loss: 6.3755
+   Train Acc phylum: 99.24%
+   Train Acc class: 93.94%
+   Train Acc order: 87.11%
+   Train Acc family: 73.78%
+   Train Acc genus: 59.17%
+   Train Acc species: 32.71%
+ Val Loss:   18.3059
+   Val Acc phylum: 98.96%
+   Val Acc class: 93.24%
+   Val Acc order: 86.31%
+   Val Acc family: 73.19%
+   Val Acc genus: 55.21%
+   Val Acc species: 31.75%
+----------------------------------------
+                                                                    
+Epoch 45/100
+ Train Loss: 6.2811
+   Train Acc phylum: 99.25%
+   Train Acc class: 94.11%
+   Train Acc order: 87.41%
+   Train Acc family: 74.07%
+   Train Acc genus: 59.55%
+   Train Acc species: 32.90%
+ Val Loss:   18.6680
+   Val Acc phylum: 99.04%
+   Val Acc class: 92.94%
+   Val Acc order: 86.48%
+   Val Acc family: 73.15%
+   Val Acc genus: 55.75%
+   Val Acc species: 31.93%
+----------------------------------------
+                                                                    
+Epoch 46/100
+ Train Loss: 6.2049
+   Train Acc phylum: 99.33%
+   Train Acc class: 94.26%
+   Train Acc order: 87.61%
+   Train Acc family: 74.47%
+   Train Acc genus: 59.98%
+   Train Acc species: 33.14%
+ Val Loss:   18.4408
+   Val Acc phylum: 98.98%
+   Val Acc class: 92.94%
+   Val Acc order: 86.28%
+   Val Acc family: 73.22%
+   Val Acc genus: 55.25%
+   Val Acc species: 32.59%
+----------------------------------------
+                                                                    
+Epoch 47/100
+ Train Loss: 6.1169
+   Train Acc phylum: 99.34%
+   Train Acc class: 94.24%
+   Train Acc order: 87.87%
+   Train Acc family: 75.09%
+   Train Acc genus: 60.70%
+   Train Acc species: 33.38%
+ Val Loss:   19.2307
+   Val Acc phylum: 98.88%
+   Val Acc class: 93.11%
+   Val Acc order: 86.62%
+   Val Acc family: 73.33%
+   Val Acc genus: 55.65%
+   Val Acc species: 32.14%
+----------------------------------------
+                                                                    
+Epoch 48/100
+ Train Loss: 6.0216
+   Train Acc phylum: 99.31%
+   Train Acc class: 94.55%
+   Train Acc order: 88.04%
+   Train Acc family: 75.54%
+   Train Acc genus: 61.18%
+   Train Acc species: 33.71%
+ Val Loss:   18.5345
+   Val Acc phylum: 98.96%
+   Val Acc class: 93.32%
+   Val Acc order: 86.70%
+   Val Acc family: 73.86%
+   Val Acc genus: 56.15%
+   Val Acc species: 32.37%
+----------------------------------------
+                                                                    
+Epoch 49/100
+ Train Loss: 5.9278
+   Train Acc phylum: 99.42%
+   Train Acc class: 94.57%
+   Train Acc order: 88.31%
+   Train Acc family: 75.86%
+   Train Acc genus: 61.71%
+   Train Acc species: 34.21%
+ Val Loss:   18.8417
+   Val Acc phylum: 99.05%
+   Val Acc class: 93.41%
+   Val Acc order: 86.92%
+   Val Acc family: 73.66%
+   Val Acc genus: 55.95%
+   Val Acc species: 32.86%
+----------------------------------------
+                                                                      
+Epoch 50/100
+ Train Loss: 5.8368
+   Train Acc phylum: 99.37%
+   Train Acc class: 94.71%
+   Train Acc order: 88.53%
+   Train Acc family: 76.29%
+   Train Acc genus: 62.16%
+   Train Acc species: 34.73%
+ Val Loss:   19.1855
+   Val Acc phylum: 98.96%
+   Val Acc class: 93.53%
+   Val Acc order: 87.06%
+   Val Acc family: 74.27%
+   Val Acc genus: 56.70%
+   Val Acc species: 33.29%
+----------------------------------------
+                                                                    
+Epoch 51/100
+ Train Loss: 5.7932
+   Train Acc phylum: 99.42%
+   Train Acc class: 94.78%
+   Train Acc order: 88.77%
+   Train Acc family: 76.48%
+   Train Acc genus: 62.46%
+   Train Acc species: 34.69%
+ Val Loss:   19.0718
+   Val Acc phylum: 98.81%
+   Val Acc class: 93.35%
+   Val Acc order: 87.10%
+   Val Acc family: 74.53%
+   Val Acc genus: 56.86%
+   Val Acc species: 33.11%
+----------------------------------------
+                                                                    
+Epoch 52/100
+ Train Loss: 5.7181
+   Train Acc phylum: 99.42%
+   Train Acc class: 94.92%
+   Train Acc order: 88.86%
+   Train Acc family: 76.81%
+   Train Acc genus: 63.02%
+   Train Acc species: 34.88%
+ Val Loss:   18.4270
+   Val Acc phylum: 99.01%
+   Val Acc class: 93.55%
+   Val Acc order: 87.10%
+   Val Acc family: 74.66%
+   Val Acc genus: 56.34%
+   Val Acc species: 32.44%
+----------------------------------------
+                                                                          
+Epoch 53/100
+ Train Loss: 5.6233
+   Train Acc phylum: 99.50%
+   Train Acc class: 95.07%
+   Train Acc order: 89.24%
+   Train Acc family: 77.20%
+   Train Acc genus: 63.41%
+   Train Acc species: 35.37%
+ Val Loss:   18.5818
+   Val Acc phylum: 99.06%
+   Val Acc class: 93.64%
+   Val Acc order: 87.44%
+   Val Acc family: 74.97%
+   Val Acc genus: 57.22%
+   Val Acc species: 33.36%
+----------------------------------------
+                                                                         
+Epoch 54/100
+ Train Loss: 5.5191
+   Train Acc phylum: 99.49%
+   Train Acc class: 95.19%
+   Train Acc order: 89.50%
+   Train Acc family: 77.63%
+   Train Acc genus: 64.16%
+   Train Acc species: 35.59%
+ Val Loss:   18.9508
+   Val Acc phylum: 99.06%
+   Val Acc class: 93.55%
+   Val Acc order: 87.42%
+   Val Acc family: 74.79%
+   Val Acc genus: 57.50%
+   Val Acc species: 33.30%
+----------------------------------------
+                                                                       
+Epoch 55/100
+ Train Loss: 5.4606
+   Train Acc phylum: 99.53%
+   Train Acc class: 95.31%
+   Train Acc order: 89.56%
+   Train Acc family: 77.95%
+   Train Acc genus: 64.42%
+   Train Acc species: 36.00%
+ Val Loss:   19.0253
+   Val Acc phylum: 99.02%
+   Val Acc class: 93.65%
+   Val Acc order: 87.83%
+   Val Acc family: 75.74%
+   Val Acc genus: 58.01%
+   Val Acc species: 33.22%
+----------------------------------------
+                                                                    
+Epoch 56/100
+ Train Loss: 5.4196
+   Train Acc phylum: 99.48%
+   Train Acc class: 95.33%
+   Train Acc order: 89.77%
+   Train Acc family: 78.22%
+   Train Acc genus: 64.72%
+   Train Acc species: 36.07%
+ Val Loss:   19.0773
+   Val Acc phylum: 98.92%
+   Val Acc class: 93.57%
+   Val Acc order: 87.58%
+   Val Acc family: 74.62%
+   Val Acc genus: 57.19%
+   Val Acc species: 33.38%
+----------------------------------------
+                                                                        
+Epoch 57/100
+ Train Loss: 5.3413
+   Train Acc phylum: 99.54%
+   Train Acc class: 95.43%
+   Train Acc order: 90.01%
+   Train Acc family: 78.71%
+   Train Acc genus: 65.18%
+   Train Acc species: 36.61%
+ Val Loss:   19.4079
+   Val Acc phylum: 99.10%
+   Val Acc class: 93.77%
+   Val Acc order: 87.89%
+   Val Acc family: 75.72%
+   Val Acc genus: 58.11%
+   Val Acc species: 33.85%
+----------------------------------------
+                                                                    
+Epoch 58/100
+ Train Loss: 5.2591
+   Train Acc phylum: 99.52%
+   Train Acc class: 95.50%
+   Train Acc order: 90.20%
+   Train Acc family: 78.90%
+   Train Acc genus: 65.62%
+   Train Acc species: 36.83%
+ Val Loss:   19.7669
+   Val Acc phylum: 99.01%
+   Val Acc class: 93.74%
+   Val Acc order: 88.09%
+   Val Acc family: 75.35%
+   Val Acc genus: 58.17%
+   Val Acc species: 33.84%
+----------------------------------------
+                                                                    
+Epoch 59/100
+ Train Loss: 5.1857
+   Train Acc phylum: 99.58%
+   Train Acc class: 95.71%
+   Train Acc order: 90.34%
+   Train Acc family: 79.29%
+   Train Acc genus: 66.02%
+   Train Acc species: 37.23%
+ Val Loss:   19.6099
+   Val Acc phylum: 98.99%
+   Val Acc class: 93.54%
+   Val Acc order: 87.61%
+   Val Acc family: 75.58%
+   Val Acc genus: 57.54%
+   Val Acc species: 34.05%
+----------------------------------------
+                                                                    
+Epoch 60/100
+ Train Loss: 5.1388
+   Train Acc phylum: 99.57%
+   Train Acc class: 95.72%
+   Train Acc order: 90.41%
+   Train Acc family: 79.35%
+   Train Acc genus: 66.37%
+   Train Acc species: 37.56%
+ Val Loss:   19.4407
+   Val Acc phylum: 98.86%
+   Val Acc class: 93.76%
+   Val Acc order: 87.95%
+   Val Acc family: 75.93%
+   Val Acc genus: 58.34%
+   Val Acc species: 33.54%
+----------------------------------------
+                                                                    
+Epoch 61/100
+ Train Loss: 5.0771
+   Train Acc phylum: 99.58%
+   Train Acc class: 95.84%
+   Train Acc order: 90.71%
+   Train Acc family: 79.83%
+   Train Acc genus: 67.13%
+   Train Acc species: 37.69%
+ Val Loss:   19.8715
+   Val Acc phylum: 98.97%
+   Val Acc class: 93.71%
+   Val Acc order: 87.43%
+   Val Acc family: 75.72%
+   Val Acc genus: 58.31%
+   Val Acc species: 34.32%
+----------------------------------------
+                                                                    
+Epoch 62/100
+ Train Loss: 4.9910
+   Train Acc phylum: 99.63%
+   Train Acc class: 95.97%
+   Train Acc order: 90.93%
+   Train Acc family: 80.10%
+   Train Acc genus: 67.45%
+   Train Acc species: 38.28%
+ Val Loss:   19.4771
+   Val Acc phylum: 98.96%
+   Val Acc class: 93.87%
+   Val Acc order: 88.10%
+   Val Acc family: 76.70%
+   Val Acc genus: 58.78%
+   Val Acc species: 34.44%
+----------------------------------------
+                                                                    
+Epoch 63/100
+ Train Loss: 4.9339
+   Train Acc phylum: 99.62%
+   Train Acc class: 96.01%
+   Train Acc order: 91.12%
+   Train Acc family: 80.47%
+   Train Acc genus: 67.82%
+   Train Acc species: 38.43%
+ Val Loss:   19.6000
+   Val Acc phylum: 99.05%
+   Val Acc class: 94.02%
+   Val Acc order: 88.18%
+   Val Acc family: 76.55%
+   Val Acc genus: 59.36%
+   Val Acc species: 34.10%
+----------------------------------------
+                                                                    
+Epoch 64/100
+ Train Loss: 4.8867
+   Train Acc phylum: 99.60%
+   Train Acc class: 96.13%
+   Train Acc order: 91.22%
+   Train Acc family: 80.54%
+   Train Acc genus: 68.05%
+   Train Acc species: 38.52%
+ Val Loss:   19.5071
+   Val Acc phylum: 99.05%
+   Val Acc class: 93.96%
+   Val Acc order: 88.22%
+   Val Acc family: 76.99%
+   Val Acc genus: 59.14%
+   Val Acc species: 35.00%
+----------------------------------------
+                                                                    
+Epoch 65/100
+ Train Loss: 4.8256
+   Train Acc phylum: 99.59%
+   Train Acc class: 96.13%
+   Train Acc order: 91.29%
+   Train Acc family: 81.12%
+   Train Acc genus: 68.62%
+   Train Acc species: 39.04%
+ Val Loss:   19.8219
+   Val Acc phylum: 99.14%
+   Val Acc class: 93.80%
+   Val Acc order: 88.43%
+   Val Acc family: 76.54%
+   Val Acc genus: 59.12%
+   Val Acc species: 34.70%
+----------------------------------------
+                                                                    
+Epoch 66/100
+ Train Loss: 4.7489
+   Train Acc phylum: 99.68%
+   Train Acc class: 96.27%
+   Train Acc order: 91.51%
+   Train Acc family: 81.43%
+   Train Acc genus: 68.91%
+   Train Acc species: 39.28%
+ Val Loss:   19.9779
+   Val Acc phylum: 99.12%
+   Val Acc class: 94.11%
+   Val Acc order: 88.29%
+   Val Acc family: 76.80%
+   Val Acc genus: 58.70%
+   Val Acc species: 34.20%
+----------------------------------------
+                                                                    
+Epoch 67/100
+ Train Loss: 4.7126
+   Train Acc phylum: 99.67%
+   Train Acc class: 96.34%
+   Train Acc order: 91.59%
+   Train Acc family: 81.63%
+   Train Acc genus: 69.23%
+   Train Acc species: 39.62%
+ Val Loss:   19.8635
+   Val Acc phylum: 99.09%
+   Val Acc class: 93.81%
+   Val Acc order: 88.52%
+   Val Acc family: 76.77%
+   Val Acc genus: 59.29%
+   Val Acc species: 34.26%
+----------------------------------------
+                                                                    
+Epoch 68/100
+ Train Loss: 4.6602
+   Train Acc phylum: 99.68%
+   Train Acc class: 96.42%
+   Train Acc order: 91.81%
+   Train Acc family: 81.83%
+   Train Acc genus: 69.54%
+   Train Acc species: 39.71%
+ Val Loss:   19.7851
+   Val Acc phylum: 99.13%
+   Val Acc class: 94.03%
+   Val Acc order: 88.41%
+   Val Acc family: 76.69%
+   Val Acc genus: 59.26%
+   Val Acc species: 35.11%
+----------------------------------------
+                                                                    
+Epoch 69/100
+ Train Loss: 4.6090
+   Train Acc phylum: 99.68%
+   Train Acc class: 96.47%
+   Train Acc order: 91.84%
+   Train Acc family: 82.22%
+   Train Acc genus: 69.93%
+   Train Acc species: 39.95%
+ Val Loss:   19.3958
+   Val Acc phylum: 98.94%
+   Val Acc class: 93.95%
+   Val Acc order: 88.52%
+   Val Acc family: 76.44%
+   Val Acc genus: 58.34%
+   Val Acc species: 34.49%
+----------------------------------------
+                                                                    
+Epoch 70/100
+ Train Loss: 4.5653
+   Train Acc phylum: 99.68%
+   Train Acc class: 96.49%
+   Train Acc order: 91.94%
+   Train Acc family: 82.28%
+   Train Acc genus: 70.15%
+   Train Acc species: 40.46%
+ Val Loss:   19.6770
+   Val Acc phylum: 99.02%
+   Val Acc class: 94.00%
+   Val Acc order: 88.67%
+   Val Acc family: 77.08%
+   Val Acc genus: 59.89%
+   Val Acc species: 34.80%
+----------------------------------------
+                                                                    
+Epoch 71/100
+ Train Loss: 4.4856
+   Train Acc phylum: 99.70%
+   Train Acc class: 96.69%
+   Train Acc order: 92.28%
+   Train Acc family: 82.61%
+   Train Acc genus: 70.79%
+   Train Acc species: 40.58%
+ Val Loss:   19.3606
+   Val Acc phylum: 99.12%
+   Val Acc class: 94.31%
+   Val Acc order: 88.89%
+   Val Acc family: 77.42%
+   Val Acc genus: 59.44%
+   Val Acc species: 34.77%
+----------------------------------------
+                                                                    
+Epoch 72/100
+ Train Loss: 4.4476
+   Train Acc phylum: 99.70%
+   Train Acc class: 96.67%
+   Train Acc order: 92.13%
+   Train Acc family: 82.78%
+   Train Acc genus: 70.85%
+   Train Acc species: 40.80%
+ Val Loss:   20.1785
+   Val Acc phylum: 99.13%
+   Val Acc class: 94.10%
+   Val Acc order: 88.65%
+   Val Acc family: 77.40%
+   Val Acc genus: 60.47%
+   Val Acc species: 34.71%
+----------------------------------------
+                                                                    
+Epoch 73/100
+ Train Loss: 4.3906
+   Train Acc phylum: 99.71%
+   Train Acc class: 96.73%
+   Train Acc order: 92.40%
+   Train Acc family: 83.16%
+   Train Acc genus: 71.18%
+   Train Acc species: 41.15%
+ Val Loss:   20.3688
+   Val Acc phylum: 99.14%
+   Val Acc class: 93.99%
+   Val Acc order: 88.72%
+   Val Acc family: 77.69%
+   Val Acc genus: 59.83%
+   Val Acc species: 35.18%
+----------------------------------------
+                                                                    
+Epoch 74/100
+ Train Loss: 4.3498
+   Train Acc phylum: 99.65%
+   Train Acc class: 96.79%
+   Train Acc order: 92.63%
+   Train Acc family: 83.46%
+   Train Acc genus: 71.63%
+   Train Acc species: 41.79%
+ Val Loss:   20.1977
+   Val Acc phylum: 99.08%
+   Val Acc class: 93.98%
+   Val Acc order: 88.65%
+   Val Acc family: 77.15%
+   Val Acc genus: 59.66%
+   Val Acc species: 34.74%
+----------------------------------------
+                                                                        
+Epoch 75/100
+ Train Loss: 4.3025
+   Train Acc phylum: 99.71%
+   Train Acc class: 96.86%
+   Train Acc order: 92.60%
+   Train Acc family: 83.49%
+   Train Acc genus: 72.00%
+   Train Acc species: 41.74%
+ Val Loss:   19.9947
+   Val Acc phylum: 99.13%
+   Val Acc class: 94.10%
+   Val Acc order: 88.59%
+   Val Acc family: 77.16%
+   Val Acc genus: 59.73%
+   Val Acc species: 34.74%
+----------------------------------------
+                                                                    
+Epoch 76/100
+ Train Loss: 4.2298
+   Train Acc phylum: 99.75%
+   Train Acc class: 96.88%
+   Train Acc order: 92.80%
+   Train Acc family: 83.99%
+   Train Acc genus: 72.41%
+   Train Acc species: 42.34%
+ Val Loss:   20.3384
+   Val Acc phylum: 99.08%
+   Val Acc class: 94.10%
+   Val Acc order: 88.59%
+   Val Acc family: 77.29%
+   Val Acc genus: 59.83%
+   Val Acc species: 34.94%
+----------------------------------------
+                                                                    
+Epoch 77/100
+ Train Loss: 4.1921
+   Train Acc phylum: 99.73%
+   Train Acc class: 97.05%
+   Train Acc order: 92.94%
+   Train Acc family: 83.86%
+   Train Acc genus: 72.62%
+   Train Acc species: 42.47%
+ Val Loss:   21.1371
+   Val Acc phylum: 99.05%
+   Val Acc class: 94.13%
+   Val Acc order: 89.03%
+   Val Acc family: 77.89%
+   Val Acc genus: 60.35%
+   Val Acc species: 35.77%
+----------------------------------------
+                                                                    
+Epoch 78/100
+ Train Loss: 4.1356
+   Train Acc phylum: 99.73%
+   Train Acc class: 97.08%
+   Train Acc order: 93.15%
+   Train Acc family: 84.26%
+   Train Acc genus: 73.07%
+   Train Acc species: 42.92%
+ Val Loss:   20.2637
+   Val Acc phylum: 99.04%
+   Val Acc class: 94.07%
+   Val Acc order: 88.43%
+   Val Acc family: 77.15%
+   Val Acc genus: 59.82%
+   Val Acc species: 35.32%
+----------------------------------------
+                                                                    
+Epoch 79/100
+ Train Loss: 4.1076
+   Train Acc phylum: 99.75%
+   Train Acc class: 97.07%
+   Train Acc order: 93.08%
+   Train Acc family: 84.46%
+   Train Acc genus: 73.19%
+   Train Acc species: 43.10%
+ Val Loss:   20.2225
+   Val Acc phylum: 99.03%
+   Val Acc class: 94.17%
+   Val Acc order: 88.76%
+   Val Acc family: 77.45%
+   Val Acc genus: 60.22%
+   Val Acc species: 35.43%
+----------------------------------------
+                                                                    
+Epoch 80/100
+ Train Loss: 4.0553
+   Train Acc phylum: 99.75%
+   Train Acc class: 97.19%
+   Train Acc order: 93.25%
+   Train Acc family: 84.76%
+   Train Acc genus: 73.65%
+   Train Acc species: 43.34%
+ Val Loss:   20.4794
+   Val Acc phylum: 99.04%
+   Val Acc class: 94.09%
+   Val Acc order: 88.70%
+   Val Acc family: 77.96%
+   Val Acc genus: 60.45%
+   Val Acc species: 35.26%
+----------------------------------------
+                                                                         
+Epoch 81/100
+ Train Loss: 4.0266
+   Train Acc phylum: 99.75%
+   Train Acc class: 97.17%
+   Train Acc order: 93.40%
+   Train Acc family: 84.88%
+   Train Acc genus: 73.74%
+   Train Acc species: 43.56%
+ Val Loss:   20.4140
+   Val Acc phylum: 99.10%
+   Val Acc class: 93.96%
+   Val Acc order: 88.63%
+   Val Acc family: 77.82%
+   Val Acc genus: 60.92%
+   Val Acc species: 35.32%
+----------------------------------------
+                                                                    
+Epoch 82/100
+ Train Loss: 3.9728
+   Train Acc phylum: 99.76%
+   Train Acc class: 97.21%
+   Train Acc order: 93.54%
+   Train Acc family: 85.20%
+   Train Acc genus: 74.18%
+   Train Acc species: 44.07%
+ Val Loss:   20.7146
+   Val Acc phylum: 99.03%
+   Val Acc class: 94.24%
+   Val Acc order: 89.10%
+   Val Acc family: 77.59%
+   Val Acc genus: 60.31%
+   Val Acc species: 35.29%
+----------------------------------------
+                                                                       
+Epoch 83/100
+ Train Loss: 3.9144
+   Train Acc phylum: 99.74%
+   Train Acc class: 97.28%
+   Train Acc order: 93.61%
+   Train Acc family: 85.40%
+   Train Acc genus: 74.61%
+   Train Acc species: 44.30%
+ Val Loss:   20.7598
+   Val Acc phylum: 99.09%
+   Val Acc class: 94.32%
+   Val Acc order: 89.13%
+   Val Acc family: 78.38%
+   Val Acc genus: 60.90%
+   Val Acc species: 35.52%
+----------------------------------------
+                                                                    
+Epoch 84/100
+ Train Loss: 3.8809
+   Train Acc phylum: 99.81%
+   Train Acc class: 97.41%
+   Train Acc order: 93.82%
+   Train Acc family: 85.52%
+   Train Acc genus: 74.78%
+   Train Acc species: 44.70%
+ Val Loss:   20.7653
+   Val Acc phylum: 99.12%
+   Val Acc class: 94.22%
+   Val Acc order: 88.92%
+   Val Acc family: 78.47%
+   Val Acc genus: 61.44%
+   Val Acc species: 35.92%
+----------------------------------------
+                                                                        
+Epoch 85/100
+ Train Loss: 3.8512
+   Train Acc phylum: 99.76%
+   Train Acc class: 97.31%
+   Train Acc order: 93.71%
+   Train Acc family: 85.56%
+   Train Acc genus: 74.99%
+   Train Acc species: 44.83%
+ Val Loss:   20.9820
+   Val Acc phylum: 99.10%
+   Val Acc class: 94.17%
+   Val Acc order: 88.95%
+   Val Acc family: 78.52%
+   Val Acc genus: 61.43%
+   Val Acc species: 35.78%
+----------------------------------------
+                                                                    
+Epoch 86/100
+ Train Loss: 3.8005
+   Train Acc phylum: 99.80%
+   Train Acc class: 97.52%
+   Train Acc order: 93.93%
+   Train Acc family: 85.92%
+   Train Acc genus: 75.33%
+   Train Acc species: 45.12%
+ Val Loss:   20.7630
+   Val Acc phylum: 99.12%
+   Val Acc class: 94.05%
+   Val Acc order: 88.76%
+   Val Acc family: 77.80%
+   Val Acc genus: 60.75%
+   Val Acc species: 36.04%
+----------------------------------------
+                                                                    
+Epoch 87/100
+ Train Loss: 3.7875
+   Train Acc phylum: 99.73%
+   Train Acc class: 97.34%
+   Train Acc order: 93.91%
+   Train Acc family: 86.05%
+   Train Acc genus: 75.54%
+   Train Acc species: 45.25%
+ Val Loss:   21.3329
+   Val Acc phylum: 99.18%
+   Val Acc class: 94.22%
+   Val Acc order: 89.00%
+   Val Acc family: 78.11%
+   Val Acc genus: 61.00%
+   Val Acc species: 36.24%
+----------------------------------------
+                                                                    
+Epoch 88/100
+ Train Loss: 3.7223
+   Train Acc phylum: 99.79%
+   Train Acc class: 97.51%
+   Train Acc order: 94.10%
+   Train Acc family: 86.32%
+   Train Acc genus: 75.88%
+   Train Acc species: 45.78%
+ Val Loss:   21.1332
+   Val Acc phylum: 99.06%
+   Val Acc class: 94.15%
+   Val Acc order: 88.85%
+   Val Acc family: 78.02%
+   Val Acc genus: 61.11%
+   Val Acc species: 35.81%
+----------------------------------------
+                                                                       
+Epoch 89/100
+ Train Loss: 3.6814
+   Train Acc phylum: 99.79%
+   Train Acc class: 97.64%
+   Train Acc order: 94.13%
+   Train Acc family: 86.57%
+   Train Acc genus: 76.20%
+   Train Acc species: 46.05%
+ Val Loss:   21.2717
+   Val Acc phylum: 99.06%
+   Val Acc class: 94.52%
+   Val Acc order: 89.19%
+   Val Acc family: 78.46%
+   Val Acc genus: 61.24%
+   Val Acc species: 35.90%
+----------------------------------------
