@@ -53,3 +53,63 @@ class Preprocessor:
 
         mapped_sentence: List[List[int]] = self.vocab.map_sentence(processed_sentence)
         return mapped_sentence
+
+class OverlappingPreprocessor:
+    def __init__(
+        self,
+        k: int,
+        augmentation_strategy: Strategy,
+        tokenization_strategy: Strategy,
+        padding_strategy: Strategy,
+        truncation_strategy: Strategy,
+        vocab: Vocabulary = None
+    ):
+        self.k = k
+        self.augmentation_strategy = augmentation_strategy
+        self.tokenization_strategy = tokenization_strategy
+        self.padding_strategy = padding_strategy
+        self.truncation_strategy = truncation_strategy
+        self.vocab = vocab
+
+    def process(self, sequence: str) -> List[List[int]]:
+        sequence_list = list(sequence)
+
+        # Step 1: Augmentation
+        augmented_sequence: List[str] = self.augmentation_strategy.execute(sequence_list)
+
+        # Step 1.5: Create overlapping windows using self.k
+        overlapping_sequences: List[List[str]] = [augmented_sequence[i:] for i in range(self.k)]
+        Debug: print(f"[Overlapping Sequences]: {overlapping_sequences}")
+
+        # Step 2: Tokenization for each overlapping window.
+        tokenized_windows = [self.tokenization_strategy.execute(seq) for seq in overlapping_sequences]
+        Debug: print(f"[Tokenized Windows]: {tokenized_windows}")
+
+        # Step 2.5: Flatten the tokenized windows.
+        #SEP = [self.vocab.get_token('SEP')]
+        #print(f"SEP is: {SEP} and type is: {type(SEP)}")
+        combined_tokens = []
+        for window in tokenized_windows:
+            for token in window:
+                combined_tokens.append(token)
+            combined_tokens.append(['SEP'])
+        combined_tokens = combined_tokens[:-1] # Removes the last "SEP"
+        #print(f"First token is: {combined_tokens[0]} and of type: {type(combined_tokens[0])}")
+
+        # Step 3: Padding
+        padded_sentence: List[str] = self.padding_strategy.execute(combined_tokens)
+        Debug: print(f"[Padded Sentence]: {padded_sentence}")
+
+        # Step 4: Truncation
+        processed_sentence: List[str] = self.truncation_strategy.execute(padded_sentence)
+        Debug: print(f"[Processed Sentence]: {processed_sentence}")
+
+        mapped_sentence: List[List[int]] = self.vocab.map_sentence(processed_sentence)
+        return mapped_sentence
+        
+
+
+
+
+
+    

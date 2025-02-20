@@ -40,9 +40,28 @@ class MLMtrainer:
             mlm_labels = batch["labels"].to(self.device)
 
             self.optimizer.zero_grad()
+            ######################################################################################################
+            # Runs the forward pass under ``autocast``.
+            
+            # with torch.autocast(device_type=self.device, dtype=torch.float16):
+            #     mlm_logits = self.model(input_ids, attention_mask)
+            #     # output is float16 because linear layers ``autocast`` to float16.
+            #     assert mlm_logits.dtype is torch.float16
+
+            #     loss = self.criteronMLM(
+            #         mlm_logits.view(-1, self.model.mlm_head.out_features),
+            #         mlm_labels.view(-1)
+            #     )
+            #     # loss is float32 because ``mse_loss`` layers ``autocast`` to float32.
+            #     assert loss.dtype is torch.float32
+
+            # Exits ``autocast`` before backward().
+            # Backward passes under ``autocast`` are not recommended.
+            # Backward ops run in the same ``dtype`` ``autocast`` chose for corresponding forward
+            #######################################################################################################
             mlm_logits = self.model(input_ids, attention_mask)
 
-            # Compute MLM loss
+            #Compute MLM loss
             loss = self.criteronMLM(
                 mlm_logits.view(-1, self.model.mlm_head.out_features),
                 mlm_labels.view(-1)

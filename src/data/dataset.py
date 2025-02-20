@@ -111,7 +111,7 @@ class MLMDataset(Dataset):
             "labels": mlm_labels_tensor,
             "attention_mask": attention_mask_tensor
         }
-    
+
 class ClassificationDataset(Dataset):
     def __init__(self,
             df,
@@ -196,7 +196,7 @@ class HieraricalClassificationDataset(Dataset):
         "attention_mask": torch.tensor(attention_mask, dtype=torch.long),
         "output": lvl_output,
     }
-  
+
 
 class OverlappingKmerHieraricalClassificationDataset(Dataset):
     def __init__(self,
