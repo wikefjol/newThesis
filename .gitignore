@@ -1,3 +1,10 @@
 data/raw.fasta
 vocab.json
 venv
+best_classification_weights.pt
+best_hierarchical_weights_.pt
+best_MLM_weights.pt
+pretrained_single_model_k2.pt
+pretrained_single_model_encoder_k2_weights_nl10_nh4_hs256_is1024_dr005_nc19.pth
+saved_weights
+*.pt
