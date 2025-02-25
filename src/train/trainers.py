@@ -23,7 +23,7 @@ class MLMtrainer:
         self.val_loader = val_loader
 
         self.criteronMLM = nn.CrossEntropyLoss()
-        self.optimizer = optim.AdamW(self.model.parameters(), lr = 5e-5) # TODO: How to (and where) to introduce a lr-scheduler?
+        self.optimizer = optim.AdamW(self.model.parameters(), lr = 5e-4) # TODO: How to (and where) to introduce a lr-scheduler?
         self.best_val_loss = float('inf')
 
     def _run_epoch(self, epoch_nr):
